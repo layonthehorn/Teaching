@@ -8,30 +8,58 @@ list_2 = ["A lion in time.", "What happened to the cat upstairs?", "Vern's untim
 
 # code without functions
 
-print("finding lion.")
-for phrase in list_1:
-    if "lion" in phrase:
-        print(phrase)
-
-print("finding lion")
-for phrase in list_2:
-    if "lion" in phrase:
-        print(phrase)
+# print("finding lion.")
+# for phrase in list_1:
+#     if "lion" in phrase:
+#         print(phrase)
+#
+# print("finding lion")
+# for phrase in list_2:
+#     if "lion" in phrase:
+#         print(phrase)
 
 
 # code with functions.
 
-# the things in the
-def find_word(list, word="lion"):
+# the things in the def are parameters
+def find_word(list, word):
     print("finding {0}.".format(word))
     for phrase in list:
         if word in phrase:
             print(phrase)
 
-find_word(list_2)
-find_word(list_2, "fire")
+
+# The things in the call are called arguments.
+# find_word(list_2, "lion")
+# find_word(list_2, "lion")
 
 
+# Default parameters
+def find_word_default(list, word="lion"):
+    print("finding {0}.".format(word))
+    for phrase in list:
+        if word in phrase:
+            print(phrase)
 
 
+# find_word_default(list_1)
+# find_word_default(list_2)
 
+# calling with too many or too few arguments
+# find_word(list_1, list_1, "Vern")
+# find_word(list_2)
+
+
+# Arbitrary Arguments
+def arbitrary_function(*args):
+    for i in args:
+        print(i)
+
+
+# arbitrary_function("lion", "cute", "lions")
+
+# empty function
+def empty_function():
+    pass
+
+# empty_function()
