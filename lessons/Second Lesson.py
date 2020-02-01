@@ -62,3 +62,17 @@ def empty_function():
     pass
 
 # empty_function()
+
+
+# functions that return something or a fruitful function
+def return_function():
+    return "A returned string"
+
+
+# a function that does not return or a unfruitful function
+def non_return_function():
+    print("a non-returned string.")
+
+
+# print(return_function())
+# non_return_function()
