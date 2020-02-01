@@ -33,6 +33,9 @@ def find_word(list, word):
 # find_word(list_2, "lion")
 # find_word(list_2, "lion")
 
+# calling with too many or too few arguments
+# find_word(list_1, list_1, "Vern")
+# find_word(list_2)
 
 # Default parameters
 def find_word_default(list, word="lion"):
@@ -44,10 +47,6 @@ def find_word_default(list, word="lion"):
 
 # find_word_default(list_1)
 # find_word_default(list_2)
-
-# calling with too many or too few arguments
-# find_word(list_1, list_1, "Vern")
-# find_word(list_2)
 
 
 # Arbitrary Arguments
