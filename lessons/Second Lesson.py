@@ -33,12 +33,12 @@ def find_word(list, word):
 
 
 # The things in the call are called arguments.
-# find_word(list_2, "lion")
-# find_word(list_2, "lion")
+find_word(list_2, "lion")
+find_word(list_2, "lion")
 
 # calling with too many or too few arguments
-# find_word(list_1, list_1, "Vern")
-# find_word(list_2)
+find_word(list_1, list_1, "Vern")
+find_word(list_2)
 
 # Default parameters
 def find_word_default(list, word="lion"):
@@ -48,8 +48,8 @@ def find_word_default(list, word="lion"):
             print(phrase)
 
 
-# find_word_default(list_1)
-# find_word_default(list_2)
+find_word_default(list_1)
+find_word_default(list_1, "fire")
 
 
 # Arbitrary Arguments
@@ -58,13 +58,13 @@ def arbitrary_function(*args):
         print(i)
 
 
-# arbitrary_function("lion", "cute", "lions")
+arbitrary_function("lion", "cute", "lions")
 
 # empty function
 def empty_function():
     pass
 
-# empty_function()
+empty_function()
 
 
 # functions that return something or a fruitful function
@@ -77,16 +77,16 @@ def non_return_function():
     print("a non-returned string.")
 
 
-# print(return_function())
-# non_return_function()
+print(return_function())
+non_return_function()
 
 # lambda functions
 # Use lambda functions when an anonymous function is required for a short period of time.
-lambda_function = lambda number: number -1
+lambda_function = lambda number: number - 1
 
 
 def proper_def(number):
     return number - 1
 
 
-#print(lambda_function(5))
+print(lambda_function(5))
