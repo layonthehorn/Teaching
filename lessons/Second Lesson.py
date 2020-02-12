@@ -33,12 +33,12 @@ def find_word(list, word):
 
 
 # The things in the call are called arguments.
-find_word(list_2, "lion")
+find_word(list_1, "lion")
 find_word(list_2, "lion")
 
 # calling with too many or too few arguments
-find_word(list_1, list_1, "Vern")
-find_word(list_2)
+# find_word(list_1, list_1, "Vern")
+# find_word(list_2)
 
 # Default parameters
 def find_word_default(list, word="lion"):
