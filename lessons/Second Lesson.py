@@ -8,15 +8,18 @@ list_2 = ["A lion in time.", "What happened to the cat upstairs?", "Vern's untim
 
 # code without functions
 
-# print("finding lion.")
-# for phrase in list_1:
-#     if "lion" in phrase:
-#         print(phrase)
-#
-# print("finding lion")
-# for phrase in list_2:
-#     if "lion" in phrase:
-#         print(phrase)
+print("finding lion.")
+for phrase in list_1:
+    if "lion" in phrase:
+        print(phrase)
+
+print("finding lion")
+for phrase in list_2:
+    if "lion" in phrase:
+        print(phrase)
+
+# how you define a function
+
 
 
 # code with functions.
@@ -76,3 +79,14 @@ def non_return_function():
 
 # print(return_function())
 # non_return_function()
+
+# lambda functions
+# Use lambda functions when an anonymous function is required for a short period of time.
+lambda_function = lambda number: number -1
+
+
+def proper_def(number):
+    return number - 1
+
+
+#print(lambda_function(5))
